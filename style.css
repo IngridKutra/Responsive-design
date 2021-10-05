@@ -1,52 +1,156 @@
 body {
-    background-image: url("bilder/background.png");
+    background-image: url("bilder/brown-texture.jpg");
     background-size: cover;
+    font-family: 'Salsa', cursive; 
+    margin: 0px;
+    
+}
+
+/*header and side figure är här*/
+
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(40, 143, 171, 0.55);
+}
+
+svg {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -2;
+}
+
+
+
+.box {
+  width: 15%;
+  position: absolute;
+  bottom: 0px;
+  left: 2%;
+
 }
 
 .logo {
-    width: 40%;
+  width: 55%;
+  padding: 2%;
 }
 
+/*Dropdownmenu starts here*/
 .dropbtn {
-    
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
+  color: white;
+  padding: 16px;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-family: 'Salsa', cursive;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #e98f28;
+}
+
+.dropdown {
+  width: 55%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  justify-content: space-evenly;
   
-  /* Dropdown button on hover & focus */
-  .dropbtn:hover {
-    background-color: #2980B9;
-  }
+}
+
+.dropdown a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 16px;
+  font-size: 22px;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  padding: 0px;
+  width: 140px;
+  text-align: center;
+  background-color: rgba(40, 143, 171, 0.55);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown a:hover {
+  background-color: #e98f28;
   
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
   
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
+}
+
+
+.dropdown-content a:hover {
+  background-color: #e98f28;
+
+}
+
+
+.show {
+  display:block;
+}
+
+/*dropdown menu ends*/
+
+/*First section which have text in*/
+
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.firstpage {
+  background: rgba(239, 234, 227, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 50%;
+  margin-top: 10%;
+}
+
+.text {
+  padding: 8%;
+  padding-bottom: 0%;
+}
+
+.text h1 {
+  text-align: center;
+  padding-bottom: 5%;
+  font-size: 30px;
+}
+
+.text p {
+  text-align: justify;
+  font-size: 22px;
+  line-height: 1.8;
   
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd}
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
+}
+
+.text p~p {
+text-align: center;
+padding: 5% 0% 1% 0%;
+}
+
+/*footer*/
+
+footer div {
+  background-color: #288FAB;
+  height: 3%;
+  width: 100%;
+  bottom: 0px;
+  position: fixed;
+}
