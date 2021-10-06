@@ -1,4 +1,5 @@
 function myFunction() {
+
     document.getElementById("myDropdown").classList.toggle("show");
  
   
@@ -16,7 +17,17 @@ function myFunction() {
     }
   }
 
-//comment section
+}
+
+function commentFunction() {
+  //comment section
 var x = document.getElementById("inputText").value;
 document.getElementById("result").innerHTML = x;
 }
+
+function alertFunction() {
+
+  //Alert window comes
+  alert("Tack! Jag återkomma inom 2 dagar:)");
+  window.location.href = "/index.html";
+  }
