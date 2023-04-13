@@ -17,8 +17,6 @@ header {
 }
 
 
-
-
 svg {
   position: fixed;
   top: 0px;
@@ -287,13 +285,8 @@ footer div {
   margin-top: 8%;
   color: #ffffff;
   margin-left: 20%;
+  background-color: rgba(40, 143, 171, 0.55)
  
-}
-
-
-.well {
-  background-color: rgba(40, 143, 171, 0.55) !important;
-  border: none !important;
 }
 
 
