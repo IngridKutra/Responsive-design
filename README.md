@@ -4,11 +4,11 @@ This project, named "slutprojekt," is a web development project focused on respo
 ## Screenshots
 Here are some screenshots of the project:
 
-[Insert screenshot 1 here]
+![Placeholder for picture](https://github.com/IngridKutra/slutprojekt/blob/master/amazon1.jpg)
 
-[Insert screenshot 2 here]
+![Placeholder for picture](https://github.com/IngridKutra/slutprojekt/blob/master/amazon2.jpg)
 
-[Insert screenshot 3 here]
+![Placeholder for picture](https://github.com/IngridKutra/slutprojekt/blob/master/amazon3.jpg)
 
 ## Conclusion
 In conclusion, "slutprojekt" is a web development project focused on responsive design. It is written in HTML, CSS, and JavaScript and appears to be a personal project that may have been used to demonstrate the creator's skills in responsive web design.
