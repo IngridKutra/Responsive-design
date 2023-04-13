@@ -51,7 +51,7 @@ svg {
 }
 
 .dropbtn:hover, .dropbtn:focus {
-  background-color: #e98f28;
+  background-color: rgb(207,126,33);
 }
 
 .dropdown {
@@ -83,7 +83,8 @@ svg {
 }
 
 .dropdown a:hover {
-  background-color: #e98f28;
+  background-color: rgb(207,126,33);
+  text-decoration: none;
   
 }
 
@@ -98,7 +99,7 @@ svg {
 
 
 .dropdown-content a:hover {
-  background-color: #e98f28;
+  background-color: rgb(207,126,33);
 
 }
 
@@ -124,14 +125,19 @@ main {
   margin-top: 10%;
 }
 
+.strele {
+  width: 50%;
+  margin-left: 25%;
+}
+
 .text {
-  padding: 8%;
+  padding: 4%;
   padding-bottom: 0%;
 }
 
 .text h1 {
   text-align: center;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
   font-size: 30px;
 }
 
@@ -157,10 +163,10 @@ footer div {
   position: fixed;
 }
 
-/*leksaker html startas här*/
+/*varors html startas här*/
 
 
-#leksaker {
+#varor {
   width: 50%;
   flex-direction: row;
   display: flex;
@@ -169,38 +175,124 @@ footer div {
   margin-top: 7%;
 }
 
-.LeksakerOverlay {
+.VarorsOverlay {
   width: 40%;
   padding: 2%;
   position: relative;
   
 }
 
-.LeksakerOverlay img{
+.VarorsOverlay img{
   width: 80%;
-  box-shadow: 0px 6px 4px rgba(36, 33, 33, 0.25);
-  
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 10px solid rgba(239, 234, 227, 0.15);
   
 }
 
 .overlay {
   position: absolute; 
   bottom: 6%;
-  background: rgba(0, 0, 0, 0.9); 
+  background: rgb(207,126,33);
+  background: linear-gradient(
+  90deg, rgba(207,126,33,0.908000700280112) 0%, rgba(51,142,162,1) 32%, rgba(40,143,171,1) 47%, rgba(53,142,161,1) 61%, rgba(207,126,33,0.9051995798319328) 100%);
   color: #ffffff; 
   transition: .5s ease;
   opacity:0;
   font-size: 15px;
   padding: 5%;
-  width: 63%;
+  width: 69%;
   text-align: center;
 }
 
-.LeksakerOverlay:hover .overlay {
+.VarorsOverlay:hover .overlay {
   opacity: 1;
 }
 
 /*Varans sidan börjas här*/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 80%;
+  position: relative;
+  margin: auto;
+  background: rgba(239, 234, 227, 0.15);
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.slidesbuttons {
+  margin: 0 auto;
+  background: rgb(207,126,33);
+  background: linear-gradient(90deg, rgba(207,126,33,0.2) 0%, rgba(51,142,162,0.4) 32%, rgba(40,143,171,0.8071603641456583) 47%, rgba(53,142,161,0.40379901960784315) 61%, rgba(207,126,33,0.2) 100%);
+  text-align: center !important;
+ 
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+#dot {
+  margin: 0 auto;
+  background: rgb(207,126,33);
+  background: linear-gradient(90deg, rgba(207,126,33,0.2) 0%, rgba(51,142,162,0.4) 32%, rgba(40,143,171,0.8071603641456583) 47%, rgba(53,142,161,0.40379901960784315) 61%, rgba(207,126,33,0.2) 100%);
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgb(207,126,33);
+  padding: 5%;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 
 .varanssidan {
 
@@ -216,14 +308,14 @@ footer div {
  padding: 3%;
  font-size: 22px;
  text-align: justify;
- width: 70%;
+ width: 80%;
  
  
 }
 
 .varanssidan div p  {
  
-  font-size: 20px;
+  font-size: 18px;
   text-align: justify;
     
   
@@ -232,14 +324,11 @@ footer div {
 .varanssidan h1 {
   margin-top: 0%;
   text-align: center;
+  font-size: 24px;
 }
 
 .varanssidan img {
-  width: 80%;
-  float: left;
-  padding-left: 20%;
-  margin-top: 5%;
-  
+  padding-left: 10%;
   
 }
 
@@ -252,6 +341,10 @@ footer div {
 .commentsection p {
   font-size: 18px;
   text-align: start;
+  color: #000000;
+  width: 45%;
+  
+  
 }
 .commentsection .meddelande {
   width: 100%;
@@ -267,6 +360,7 @@ footer div {
   color: #ffffff;
   font-size: 16px;
   padding: 1%;
+  font-family: 'Salsa', cursive;
   
 }
 
@@ -275,56 +369,380 @@ footer div {
   background: rgba(239, 234, 227, 0.15); 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 2%;
+  color: #3F3C3C;
+  font-size: 12px;
+
 }
 
 /*kontakt formulär*/
 
 #contactform {
-  width: 100%;
-  margin: 0 auto;
+  width: 50%;
   margin-top: 8%;
   color: #ffffff;
   margin-left: 20%;
-  background-color: rgba(40, 143, 171, 0.55)
- 
-}
-
-
-#contact {
-  width: 100%;
   background-color: rgba(40, 143, 171, 0.55);
-	color:#f4f4f4;
-	padding-bottom:80px;
   
 }
+
 #legend {
-  border-bottom: none;
-  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 3%;
 }
 
-.form-group {
-  width: 100%;
-  margin: 0 auto !important;
-  padding: 2%;
+#contactform p {
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+#form {
+  text-align: center;
+}
+input, textarea{
+  width: 80%;
+  margin: 2%;
+  padding: 1%;
+  font-family: 'Salsa', cursive !important;
+  border: 1px solid #288FAB;
   
 }
 
-.col-md-9 {
-  width: 100% !important;
+#skicka {
+  width: 20%;
+  background-color: #288FAB;
+  color:#ffffff;
+  margin-bottom: 5%;
+  border: 1px solid #186175;
 }
 
-p{
-	font-size:12px;
-	line-height:1.6em;
-  text-align: center;
-}
 
-.form-group button {
+/*Mobilens styles*/
+
+@media screen and (max-width: 520px){
+  /*index.html*/
+  main {
+    justify-content: center;
+  }
+
+  header {
+    display: flex !important;
+    flex-direction: column;
+  }
+  
+  .header {
+    top: 0px;
+    background-color: #288FAB;
+    width: 100%;
+   
+  }
+
+  .logo {
+    width: 90%;
+    
+  }
+
+  .dropdown {
+    position: relative;
+    width: 100%;
+    background-color: #288FAB;
+    border: 2px solid #000000;
+  }
+
+  .dropdown-content {
+    background-color: #288FAB;
+  }
+
+  .dropbtn img {
+    width: 12%;
+
+  }
+
+  svg {
+    display: none;
+  }
+
+  .box {
+   display: none;
+  }
+
+  .firstpage {
+    background: rgba(239, 234, 227, 0.15);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 80%;
+    margin-top: 25%;
+  }
+
+  .text p {
+    line-height: 1.2;
+    font-size: 16px;
+  }
+
+  /*Kategori.html*/
+
+  #varor {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-top: 25%;
+   
+  }
+
+  .VarorsOverlay {
+    width: 70%;
+    margin-left: 10%;
+  }
+
+ #varor img {
+   margin: 0 auto;
+ }
+  .overlay {
+    width: 72%;
+    bottom: 4%;
+  }
+
+/*Kategori undersidan*/
+
+.varanssidan {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0 auto;
+  margin-top: 25%;
+  background: rgba(239, 234, 227, 0.15);
+  
 }
 
-#contacticons {
+
+.varanssidan div p {
+  text-align: justify;
+  line-height: 1.2;
+  font-size: 18px;
+  
+}
+.varanssidan div p~p {
   text-align: center;
- 
+  line-height: 1.2;
+  font-size: 20px;
+  
 }
 
+.slidesbuttons {
+  text-align: center !important;
+}
+
+.commentsection {
+  
+  margin: 0 auto;
+  margin-top: 10%;
+  width: 80%;
+  text-align: center;
+  
+}
+
+.form-group button{
+  margin: 0 auto;
+  background-color: #288FAB;
+}
+
+.commentsection p {
+  font-size: 18px;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+/*Kontakt html*/
+
+#contactform {
+  margin: 0 auto ;
+  margin-top: 25%;
+  width: 80%;
+}
+
+
+}
+/*mer responsiv*/
+@media (min-width: 768px){
+  .container {
+      max-width: 500px;
+  }
+
+  .dropbtn img {
+    width: 12%;
+  
+  }
+
+  .firstpage {
+    background: rgba(239, 234, 227, 0.15);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 50%;
+    margin-top: 8%;
+    margin-left: 10%;
+    
+  }
+  
+  }
+
+/*Tablet styles*/
+
+@media screen and (min-width: 521px) and (max-width: 840px)  {
+    /*index.html*/
+    main {
+      justify-content: center;
+    }
+  
+    header {
+      display: flex !important;
+      flex-direction: column;
+    }
+    
+    .header {
+      top: 0px;
+      background-color: #288FAB;
+      width: 100%;
+     
+    }
+  
+    .logo {
+      width: 50%;
+      min-width: 336px;
+     
+    }
+  
+    .dropdown {
+      position: relative;
+
+      width: 100%;
+      background-color: rgba(40, 143, 171, 0.55);;
+    }
+
+    .dropdown a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 16px;
+      font-size: 20px;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    }
+  
+    .dropdown-content {
+      background-color: rgba(40, 143, 171, 0.55);
+     
+    }
+  
+    .dropbtn img {
+      width: 12%;
+  
+    }
+  
+    svg {
+      display: none;
+    }
+  
+    .box {
+      position: absolute;
+      width: 17%;
+      top: 0px;
+      right: 0px;
+      padding: 2%;
+      left: auto;
+    
+    }
+  
+    .firstpage {
+      background: rgba(239, 234, 227, 0.15);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      width: 80%;
+      margin-top: 25%;
+    }
+  
+    .text p {
+      line-height: 1.2;
+      font-size: 16px;
+    }
+
+  #varor {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    margin-top: 20%;
+   
+  }
+
+ 
+ #varor img {
+   margin: 0 auto;
+ }
+ .overlay {
+  width: 69%;
+  bottom: 6%;
+}
+
+/*Kategori undersidan*/
+
+.varanssidan {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-top: 25%;
+  background: rgba(239, 234, 227, 0.15);
+  
+}
+
+.varanssidan div {
+  
+  font-size: 16px;
+}
+
+.varanssidan div p {
+  text-align: justify;
+  line-height: 1.2;
+  font-size: 16px;
+}
+
+.slidesbuttons {
+  text-align: center !important;
+}
+
+.commentsection {
+  
+  margin: 0 auto;
+  margin-top: 10%;
+  width: 80%;
+  text-align: center;
+}
+
+.form-group button{
+  margin: 0 auto;
+  background-color: #288FAB;
+}
+
+.commentsection p {
+  font-size: 18px;
+  text-align: center;
+}
+
+/*Kontakt html*/
+
+#contactform {
+  margin: 0 auto ;
+  margin-top: 25%;
+  width: 100%;
+}
+
+
+
+
+}
+
+@media (min-width: 992px) {
+  
+
+
+}

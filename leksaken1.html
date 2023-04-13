@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" 
     rel="stylesheet">  
+   
     <title>Amazon's feedback by mamma Ingrid</title>
 </head>
 <body>
@@ -43,9 +44,29 @@
      <div>
         <section class="varanssidan">
            
-               <div>
-                   <img src="bilder/leksaken1.png">
-               </div>
+          <div>
+            <div class="slideshow-container">
+              <div class="slidesbuttons">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              
+              <div class="mySlides fade">
+                <img src="bilder/leksaken1.png" style="width:100%">
+              </div>
+            
+              <div class="mySlides fade">
+                <img src="bilder/leksaken1a.png" style="width:100%">
+              </div>
+
+            <div id="dot" style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+            </div>
+            <br>
+            
+           </div>
                <div>
                    <h1>Lego 60215 City Fire Brandstation </h1>
                <p>Det var en present till min son
@@ -63,6 +84,7 @@
         <p>Dela din erfarenheten</p>
         <input type="text" id="inputText" placeholder="Skriva gärna här" class="meddelande">
         </input>
+
         <button onclick="commentFunction()" class="btnskicka">Skicka</button>
         <div id="result">
             Din kommentär ska ligga här :)
@@ -75,6 +97,8 @@
     <footer>
       <div></div>
     </footer>
-     <script src="script.js"></script>  
+     <script src="script.js"></script> 
+     <script>runSlides()</script> 
+    
 </body>
 </html>

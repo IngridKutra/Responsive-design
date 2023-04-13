@@ -43,9 +43,28 @@
      <div>
         <section class="varanssidan">
            
-               <div>
-                   <img src="bilder/leksaken3.png">
-               </div>
+          <div>
+            <div class="slideshow-container">
+              <div class="slidesbuttons">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <div class="mySlides fade">
+                <img src="bilder/leksaken3.png" style="width:100%">
+              </div>
+            
+              <div class="mySlides fade">
+                <img src="bilder/leksaken3a.png" style="width:100%">
+              </div>
+
+              <div id="dot" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+              </div>
+            </div>
+            <br>
+            
+           </div>
                <div>
                    <h1>DONSFIELD Pop It Fidget leksak</h1>
                <p>Mina barn tycker att det är väldigt tråkigt åka långt tid i bilen ibland. 
@@ -72,6 +91,7 @@
     <footer>
       <div></div>
     </footer>
-     <script src="script.js"></script>  
+     <script src="script.js"></script>
+     <script>runSlides()</script>  
 </body>
 </html>
